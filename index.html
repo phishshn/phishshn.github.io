@@ -1,57 +1,17 @@
-<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chat with an Agent</title>
-  <style>
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      font-family: system-ui, sans-serif;
-      background: #f4f7f6;
-      color: #18332f;
-    }
-
-    button {
-      border: 0;
-      border-radius: 6px;
-      padding: 14px 22px;
-      background: #087f70;
-      color: #fff;
-      font: inherit;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #06695d;
-    }
-
-    button:focus-visible {
-      outline: 3px solid #18332f;
-      outline-offset: 3px;
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bowie.etree.org | From the Fundy tides to the Rockies</title>
+<style>
+:root{--cream:#f2eee3;--pine:#173a35;--gold:#d6a963;--mist:#b7c7bd}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0b1d1d;color:var(--cream);font-family:Georgia,'Times New Roman',serif}a{color:inherit} .hero{min-height:100vh;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(6,19,22,.25),rgba(6,19,22,.22) 35%,#0b1d1d 98%),url('landscape.svg') center center/cover no-repeat;display:flex;flex-direction:column}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,22,24,.56),transparent 72%);pointer-events:none}.topbar{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;padding:30px clamp(24px,6vw,95px);gap:20px}.stamp{display:flex;align-items:center;gap:14px;text-decoration:none}.tree{width:56px;height:56px;border:2px solid #e2d9bd;border-radius:50%;display:grid;place-items:center;color:#e2d9bd}.tree svg{width:39px}.stamptext{display:flex;flex-direction:column;line-height:1}.stamptext b{font:700 29px/1 Georgia,serif;letter-spacing:-1.5px}.stamptext small{font:11px/2 Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#c9d3c7}.topbar nav{display:flex;gap:30px;font:12px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}.topbar nav a{text-decoration:none;opacity:.85}.topbar nav a:hover{color:var(--gold)}.main{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center;max-width:900px;padding:60px clamp(24px,9vw,145px) 90px}.eyebrow{font:12px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#e4c891}.main h1{font-size:clamp(60px,10vw,132px);line-height:.95;letter-spacing:-5px;margin:22px 0 20px;font-weight:400;text-shadow:0 3px 30px #071d20}.main h1 span{color:#d6ad70}.main p{font-size:clamp(18px,2vw,23px);line-height:1.55;max-width:570px;color:#e7e8db;text-shadow:0 2px 12px #0b1d1d}.button{display:inline-block;width:max-content;margin-top:24px;padding:16px 24px;border:1px solid #e2c995;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;background:rgba(10,28,27,.45)}.button:hover{background:#d6a963;color:#0b1d1d}.bottomline{position:relative;z-index:1;display:flex;justify-content:space-between;gap:20px;padding:22px clamp(24px,6vw,95px);font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;border-top:1px solid #ffffff30;color:#d8dfd4}.section{padding:90px clamp(24px,9vw,145px);background:#102b29}.section h2{font-size:clamp(35px,5vw,62px);font-weight:400;margin:0 0 20px}.section p{font-size:18px;line-height:1.7;max-width:760px;color:#cbd7cd}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:45px}.card{padding:30px;border:1px solid #52655a;background:#15332f;min-height:205px}.card .number{color:var(--gold);font:12px Arial,sans-serif;letter-spacing:2px}.card h3{font-size:28px;font-weight:400;margin:25px 0 10px}.card p{font-size:15px;margin:0}.footer{padding:30px clamp(24px,9vw,145px);background:#091b1b;color:#aabcb0;font:12px Arial,sans-serif;letter-spacing:1px}@media(max-width:700px){.topbar nav{gap:12px;font-size:10px}.topbar{align-items:flex-start}.stamptext b{font-size:22px}.tree{width:44px;height:44px}.main h1{letter-spacing:-3px}.cards{grid-template-columns:1fr}.bottomline{flex-direction:column;gap:8px}}
+</style>
 </head>
 <body>
-  <button id="chat-button" type="button">Chat with an Agent</button>
-
-  <script type="text/javascript" charset="utf-8">
-    (function (g, e, n, es, ys) {
-      g['_genesysJs'] = e;
-      g[e] = g[e] || function () {
-        (g[e].q = g[e].q || []).push(arguments)
-      };
-      g[e].t = 1 * new Date();
-      g[e].c = es;
-      ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-    })(window, 'Genesys', 'https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
-      environment: 'prod-usw2',
-      deploymentId: 'e26bc384-5c03-4efc-847a-fddd8d7c0e59'
-    });
-  </script>
-</body>
-</html>
+<header class="hero" id="top">
+ <div class="topbar"><a class="stamp" href="#top" aria-label="bowie etree home"><span class="tree"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M24 5 10 24h7l-9 12h32L31 24h7L24 5Z"/><path d="M24 35v9M14 29h20"/></svg></span><span class="stamptext"><b>etree.org</b><small>live music archive · est. 1998</small></span></a><nav><a href="#about">About</a><a href="#places">The places</a><a href="#music">The music</a></nav></div>
+ <div class="main"><div class="eyebrow">New Brunswick ↔ Alberta &nbsp; / &nbsp; Canada</div><h1>bowie<span>.</span><br>etree.org</h1><p>From the tides of the Bay of Fundy to the peaks of the Canadian Rockies. A little corner of the internet for mountains, music, and the spirit of tape trading.</p><a class="button" href="#about">Come on in &nbsp; ↗</a></div>
+ <div class="bottomline"><span>45° N · Bay of Fundy</span><span>Live music · long drives · mountain air</span><span>52° N · Jasper / Lake Louise</span></div>
+</header>
+<section class="section" id="about"><div class="eyebrow">Old-school internet, new scenery</div><h2>Good music travels.</h2><p>A nod to the original etree days: shared recordings, late-night downloads, DATs, SHNs, FLACs, and the people who kept live music circulating. The backdrop has changed from the Atlantic coast to the Rockies, but the soundtrack hasn't stopped.</p><div class="cards" id="places"><div class="card"><div class="number">01 / EAST</div><h3>Bay of Fundy</h3><p>New Brunswick roots. Salt air, red sandstone cliffs, and the world's famous tides.</p></div><div class="card"><div class="number">02 / WEST</div><h3>Jasper & Lake Louise</h3><p>Alpine mornings, chairlifts, long runs, and a view worth the drive.</p></div><div class="card" id="music"><div class="number">03 / ON REPEAT</div><h3>Phish · Goose</h3><p>Improvisation, setlists, show posters, and the taper-friendly spirit that started it all.</p></div></div></section>
+<footer class="footer">bowie.etree.org &nbsp; · &nbsp; Made for the love of live music and wide-open places. &nbsp; · &nbsp; Unofficial fan tribute.</footer>
+</body></html>
