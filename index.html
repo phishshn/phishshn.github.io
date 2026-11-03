@@ -41,5 +41,15 @@
     });
   });
 </script>
+
+ <script type="text/javascript">
+  Genesys("subscribe", "Database.ready", function () {
+    Genesys("command", "Database.set",
+      { messaging: { customAttributes: { customerName: "DavidGilmour" } } },
+      function () { console.log("customerName set"); },
+      function (err) { console.error("Database.set failed", err); }
+    );
+  });
+</script>
  
 </body></html>
