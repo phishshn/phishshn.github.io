@@ -35,21 +35,12 @@
     Genesys("command", "Database.set", {
       messaging: {
         customAttributes: {
-          customerName: "Jane Doe"   // replace with your logged-in user's name or a form value
+          customerName: "DavidGilmour"   // replace with your logged-in user's name or a form value
         }
       }
     });
   });
 </script>
 
- <script type="text/javascript">
-  Genesys("subscribe", "Database.ready", function () {
-    Genesys("command", "Database.set",
-      { messaging: { customAttributes: { customerName: "DavidGilmour" } } },
-      function () { console.log("customerName set"); },
-      function (err) { console.error("Database.set failed", err); }
-    );
-  });
-</script>
  
 </body></html>
