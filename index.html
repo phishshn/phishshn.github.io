@@ -29,5 +29,17 @@
     deploymentId: 'e26bc384-5c03-4efc-847a-fddd8d7c0e59'
   });
 </script>
+
+<script type="text/javascript">
+  Genesys("subscribe", "Database.ready", function () {
+    Genesys("command", "Database.set", {
+      messaging: {
+        customAttributes: {
+          customerName: "Jane Doe"   // replace with your logged-in user's name or a form value
+        }
+      }
+    });
+  });
+</script>
  
 </body></html>
